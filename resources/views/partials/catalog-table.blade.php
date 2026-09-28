@@ -5,7 +5,7 @@
         <table class="w-full text-sm">
             <thead class="bg-paper text-xs uppercase text-muted">
                 <tr>
-                    <th class="p-3 text-start">{{ __('Site') }}</th>
+                    <th class="p-3 text-start">{{ __('Site web') }}</th>
                     <th class="p-3 text-start">{{ __('Langue') }}</th>
                     <th class="p-3 text-start">{{ __('Thématique') }}</th>
                     <th class="p-3 text-start">{{ __('Trafic mensuel') }}</th>

@@ -4,7 +4,7 @@
     <div class="overflow-x-auto rounded border border-line bg-white">
         <table class="w-full text-sm">
             <thead class="bg-paper text-start text-xs uppercase text-muted">
-                <tr><th class="p-3 text-start">#</th><th class="p-3 text-start">{{ __('Site') }}</th><th class="p-3 text-start">{{ __('Ancre') }}</th><th class="p-3 text-start">{{ __('Prix') }}</th><th class="p-3 text-start">{{ __('Statut') }}</th><th class="p-3 text-start">{{ __('Échéance') }}</th></tr>
+                <tr><th class="p-3 text-start">#</th><th class="p-3 text-start">{{ __('Site web') }}</th><th class="p-3 text-start">{{ __('Ancre') }}</th><th class="p-3 text-start">{{ __('Prix') }}</th><th class="p-3 text-start">{{ __('Statut') }}</th><th class="p-3 text-start">{{ __('Échéance') }}</th></tr>
             </thead>
             <tbody>
                 @foreach ($orders as $order)

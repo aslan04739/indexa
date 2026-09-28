@@ -8,7 +8,7 @@
     </div>
 
     <dl class="grid gap-4 rounded border border-line bg-white p-4 sm:grid-cols-2">
-        <div><dt class="text-sm text-muted">{{ __('Site') }}</dt><dd class="font-semibold">{{ $order->site->domain }}</dd></div>
+        <div><dt class="text-sm text-muted">{{ __('Site web') }}</dt><dd class="font-semibold">{{ $order->site->domain }}</dd></div>
         <div><dt class="text-sm text-muted">{{ __('Prix') }}</dt><dd class="tabular-nums">{{ dzd($user->isPublisher() ? $order->publisher_price : $order->buyer_price) }}</dd></div>
         <div><dt class="text-sm text-muted">{{ __('URL cible') }}</dt><dd class="break-all">{{ $order->target_url }}</dd></div>
         <div><dt class="text-sm text-muted">{{ __('Texte d\'ancre') }}</dt><dd>{{ $order->anchor_text }}</dd></div>
