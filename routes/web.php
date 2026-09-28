@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\App\WalletController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\SeoController;
 use App\Http\Middleware\SetLocale;
@@ -23,3 +24,5 @@ foreach (config('indexa.locales') as $locale => $meta) {
             }
         });
 }
+
+Route::post('/webhooks/chargily', [WalletController::class, 'webhook'])->name('webhooks.chargily');

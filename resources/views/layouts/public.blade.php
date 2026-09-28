@@ -3,7 +3,8 @@
     $locale = app()->getLocale();
     $locales = Localized::locales();
     $t = "site.pages.$page";
-    $canonical = Localized::url($page);
+    $canonical ??= Localized::url($page);
+    $noindex ??= false;
 @endphp
 <!DOCTYPE html>
 <html lang="{{ $locales[$locale]['hreflang'] }}" dir="{{ $locales[$locale]['dir'] }}">
@@ -12,6 +13,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ __("$t.title") }}</title>
     <meta name="description" content="{{ __("$t.description") }}">
+    @if ($noindex)
+        <meta name="robots" content="noindex, follow">
+    @endif
     <link rel="canonical" href="{{ $canonical }}">
     @foreach (Localized::alternates($page) as $hreflang => $href)
         <link rel="alternate" hreflang="{{ $hreflang }}" href="{{ $href }}">
@@ -38,9 +42,10 @@
             <a href="{{ Localized::url('home') }}" class="text-xl font-bold tracking-tight">{{ config('indexa.name') }}</a>
             <nav aria-label="Main">
                 <ul class="flex flex-wrap gap-5 text-sm">
-                    @foreach (['advertisers', 'publishers', 'about'] as $item)
+                    @foreach (['catalog', 'advertisers', 'publishers', 'about'] as $item)
                         <li><a href="{{ Localized::url($item) }}" @if ($item === $page) aria-current="page" class="font-semibold text-brand" @else class="hover:text-brand" @endif>{{ __("site.nav.$item") }}</a></li>
                     @endforeach
+                    <li><a href="{{ route('app.login') }}" class="hover:text-brand">{{ __('site.login') }}</a></li>
                 </ul>
             </nav>
             <nav aria-label="{{ __('site.language') }}">

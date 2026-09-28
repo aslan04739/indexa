@@ -12,6 +12,7 @@
             @endforeach
         </ul>
         @if ($page !== 'about')
+            <p><a href="{{ route('app.register', ['role' => $page === 'publishers' ? 'publisher' : 'buyer']) }}" class="inline-block rounded bg-brand px-5 py-3 font-semibold text-white hover:bg-brand-dark">{{ __('site.register_cta') }}</a></p>
             <p><a href="{{ App\Support\Localized::url($page === 'advertisers' ? 'publishers' : 'advertisers') }}" class="text-brand underline">{{ __($page === 'advertisers' ? 'site.cta_publisher' : 'site.cta_advertiser') }}</a></p>
         @endif
     </article>

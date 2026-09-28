@@ -3,11 +3,14 @@
 namespace Tests\Feature;
 
 use App\Support\Localized;
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use PHPUnit\Framework\Attributes\DataProvider;
 use Tests\TestCase;
 
 class PublicPagesTest extends TestCase
 {
+    use RefreshDatabase;
+
     /** @return array<string, array{string, string}> */
     public static function pages(): array
     {

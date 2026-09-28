@@ -3,6 +3,7 @@
 return [
     'tagline' => 'La plateforme algérienne d\'articles sponsorisés et de backlinks',
     'nav' => [
+        'catalog' => 'Catalogue',
         'home' => 'Accueil',
         'advertisers' => 'Annonceurs',
         'publishers' => 'Éditeurs',
@@ -13,9 +14,18 @@ return [
     'language' => 'Langue',
     'breadcrumb_home' => 'Accueil',
     'footer' => 'Indexa met en relation les entreprises algériennes et les médias et sites web algériens pour publier des contenus sponsorisés, identifiés comme tels.',
+    'register_cta' => 'Créer un compte gratuit',
+    'login' => 'Connexion',
     'contact' => 'Contact',
 
     'pages' => [
+        'catalog' => [
+            'title' => 'Catalogue des sites algériens pour articles sponsorisés | Indexa',
+            'description' => 'Parcourez les sites et médias algériens vérifiés : langue, thématique, trafic, autorité, type de lien et prix en dinars.',
+            'h1' => 'Catalogue des sites algériens',
+            'intro' => 'Chaque site du catalogue a été vérifié par Indexa : propriété prouvée, contenu actif, trafic réel. Les prix incluent la commission Indexa et sont en dinars algériens. Les noms de domaine sont visibles après inscription gratuite.',
+            'cta' => 'Créer un compte gratuit pour voir les domaines et commander',
+        ],
         'home' => [
             'title' => 'Indexa : articles sponsorisés et backlinks sur les sites algériens',
             'description' => 'Publiez des articles sponsorisés sur des médias et sites algériens vérifiés. Prix en dinars, paiement CIB et Edahabia, suivi des liens pendant 12 mois.',
@@ -23,7 +33,7 @@ return [
             'intro' => 'Indexa est une plateforme algérienne qui permet aux entreprises d\'acheter des articles sponsorisés sur des médias et sites web algériens vérifiés. Les prix sont en dinars, le paiement se fait par carte CIB ou Edahabia, et chaque lien publié est contrôlé pendant 12 mois.',
             'steps_title' => 'Comment ça marche',
             'steps' => [
-                ['Choisissez un site', 'Filtrez par langue, thématique, wilaya, trafic algérien et prix en DZD.'],
+                ['Choisissez un site', 'Filtrez par langue, thématique, type de lien, trafic et prix en DZD.'],
                 ['Commandez', 'Fournissez votre texte ou confiez la rédaction en français ou en arabe.'],
                 ['Payez en dinars', 'Rechargez votre portefeuille par CIB ou Edahabia. Facture à chaque paiement.'],
                 ['Suivez vos liens', 'Chaque article est vérifié automatiquement : en ligne, lien présent, attribut, indexable.'],
@@ -49,7 +59,7 @@ return [
             'h1' => 'Des articles sponsorisés sur les médias algériens, payés en dinars',
             'intro' => 'Indexa donne aux entreprises, agences et e-commerçants algériens accès à un catalogue de sites algériens vérifiés. Vous choisissez le site, vous commandez, vous payez en DZD, et Indexa suit la publication et la durée de vie du lien.',
             'points' => [
-                'Filtres par langue, thématique, wilaya, trafic algérien, autorité et prix',
+                'Filtres par langue, thématique, type de lien, trafic, autorité et prix',
                 'Rédaction en français ou en arabe en option',
                 'Paiement par CIB ou Edahabia et facture à chaque paiement',
                 'Contrôle automatique de chaque lien pendant 12 mois',
