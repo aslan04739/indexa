@@ -1,0 +1,27 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        // Append-only ledger. A user's balance is the sum of their rows, in DZD.
+        Schema::create('wallet_transactions', function (Blueprint $table) {
+            $table->id();
+            $table->foreignId('user_id')->constrained();
+            $table->integer('amount');
+            $table->string('type');
+            $table->nullableMorphs('reference');
+            $table->string('description')->nullable();
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('wallet_transactions');
+    }
+};

@@ -3,6 +3,7 @@
 return [
     'tagline' => 'The Algerian sponsored content and backlink platform',
     'nav' => [
+        'catalog' => 'Catalog',
         'home' => 'Home',
         'advertisers' => 'Advertisers',
         'publishers' => 'Publishers',
@@ -13,9 +14,18 @@ return [
     'language' => 'Language',
     'breadcrumb_home' => 'Home',
     'footer' => 'Indexa connects Algerian companies with Algerian media and websites to publish sponsored content, labelled as such.',
+    'register_cta' => 'Create a free account',
+    'login' => 'Log in',
     'contact' => 'Contact',
 
     'pages' => [
+        'catalog' => [
+            'title' => 'Catalog of Algerian websites for sponsored articles | Indexa',
+            'description' => 'Browse vetted Algerian websites and media: language, topic, traffic, authority, link type and price in dinars.',
+            'h1' => 'Catalog of Algerian websites',
+            'intro' => 'Every site in the catalog has been vetted by Indexa: proven ownership, active content, real traffic. Prices include the Indexa commission and are in Algerian dinars. Domain names are visible after free signup.',
+            'cta' => 'Create a free account to see domains and order',
+        ],
         'home' => [
             'title' => 'Indexa: sponsored articles and backlinks on Algerian websites',
             'description' => 'Publish sponsored articles on vetted Algerian media and websites. Prices in dinars, CIB and Edahabia payment, every link monitored for 12 months.',
@@ -23,7 +33,7 @@ return [
             'intro' => 'Indexa is an Algerian platform where companies buy sponsored articles on vetted Algerian media and websites. Prices are in dinars, payment is by CIB or Edahabia card, and every published link is monitored for 12 months.',
             'steps_title' => 'How it works',
             'steps' => [
-                ['Pick a site', 'Filter by language, topic, wilaya, Algerian traffic and price in DZD.'],
+                ['Pick a site', 'Filter by language, topic, link type, traffic and price in DZD.'],
                 ['Order', 'Send your own text or have it written in French or Arabic.'],
                 ['Pay in dinars', 'Top up your wallet by CIB or Edahabia. Invoice for every payment.'],
                 ['Track your links', 'Each article is checked automatically: live, link present, attribute, indexable.'],
@@ -49,7 +59,7 @@ return [
             'h1' => 'Sponsored articles on Algerian media, paid in dinars',
             'intro' => 'Indexa gives Algerian companies, agencies and online stores access to a catalog of vetted Algerian websites. You pick the site, order, pay in DZD, and Indexa tracks the publication and the life of the link.',
             'points' => [
-                'Filters by language, topic, wilaya, Algerian traffic, authority and price',
+                'Filters by language, topic, link type, traffic, authority and price',
                 'Optional writing in French or Arabic',
                 'CIB or Edahabia payment and an invoice for every payment',
                 'Automatic check of every link for 12 months',

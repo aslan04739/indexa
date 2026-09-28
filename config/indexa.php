@@ -17,9 +17,19 @@ return [
     // Arabic keeps Latin slugs: readable when shared, no percent-encoding in logs or reports.
     'pages' => [
         'home' => ['fr' => '', 'ar' => '', 'en' => ''],
+        'catalog' => ['fr' => 'catalogue', 'ar' => 'dalil', 'en' => 'catalog'],
         'advertisers' => ['fr' => 'annonceurs', 'ar' => 'moualinin', 'en' => 'advertisers'],
         'publishers' => ['fr' => 'editeurs', 'ar' => 'nashirin', 'en' => 'publishers'],
         'about' => ['fr' => 'a-propos', 'ar' => 'man-nahnu', 'en' => 'about'],
+    ],
+
+    // Seller identity printed on invoices (law 18-05 requires it on the site and on invoices).
+    'legal' => [
+        'name' => env('INDEXA_LEGAL_NAME', 'Indexa'),
+        'address' => env('INDEXA_LEGAL_ADDRESS', ''),
+        'rc' => env('INDEXA_RC', ''),
+        'nif' => env('INDEXA_NIF', ''),
+        'nis' => env('INDEXA_NIS', ''),
     ],
 
     'contact_email' => env('INDEXA_CONTACT_EMAIL', 'contact@indexa.dz'),
