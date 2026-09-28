@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+@source '../views/**/*.blade.php';
+
+/* System font stacks: no third-party font requests, correct Arabic shaping from the OS. */
+@theme {
+    --font-sans: ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', 'Noto Sans Arabic', Tahoma, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --color-paper: #f7f8f7;
+    --color-ink: #16201c;
+    --color-muted: #52615b;
+    --color-line: #d8e0dc;
+    --color-brand: #0d6b50;
+    --color-brand-dark: #0a543f;
+}
+
+html[dir='rtl'] body {
+    line-height: 1.8;
+}
